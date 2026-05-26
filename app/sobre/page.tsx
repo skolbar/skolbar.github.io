@@ -5,6 +5,7 @@ import Header from "@/components/header"
 import AboutSection from "@/components/about-section"
 import Footer from "@/components/footer"
 import MuteButton from "@/components/mute-button"
+import { papyrusBackground } from "@/lib/papyrus-background"
 
 export default function SobrePage() {
   const [isMuted, setIsMuted] = useState(true)
@@ -15,7 +16,7 @@ export default function SobrePage() {
   }
 
   return (
-    <main className="min-h-screen pt-16">
+    <main className="min-h-screen pt-16" style={papyrusBackground}>
       <Header />
       <AboutSection />
       <Footer />

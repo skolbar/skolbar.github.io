@@ -9,6 +9,7 @@ import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
 import MuteButton from "@/components/mute-button"
 import { OrnamentDivider } from "@/components/section-transition"
+import { papyrusBackground } from "@/lib/papyrus-background"
 
 
 export default function Home() {
@@ -36,15 +37,10 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden">
       <Header />
-      {/* Single continuous parchment wrapper - hero + all content */}
+      {/* Single continuous papyrus wrapper - hero + all content */}
       <div
         className="relative"
-        style={{
-          backgroundImage: "url('/images/parchment-bg.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "local",
-        }}
+        style={papyrusBackground}
       >
         <HeroSection isMuted={isMuted} videoRef={videoRef} />
 

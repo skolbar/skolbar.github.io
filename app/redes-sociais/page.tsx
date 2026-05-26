@@ -5,6 +5,7 @@ import Header from "@/components/header"
 import SocialSection from "@/components/social-section"
 import Footer from "@/components/footer"
 import MuteButton from "@/components/mute-button"
+import { papyrusBackground } from "@/lib/papyrus-background"
 
 export default function RedesSociaisPage() {
   const [isMuted, setIsMuted] = useState(true)
@@ -14,7 +15,7 @@ export default function RedesSociaisPage() {
   }
 
   return (
-    <main className="min-h-screen pt-16">
+    <main className="min-h-screen pt-16" style={papyrusBackground}>
       <Header />
       <SocialSection />
       <Footer />
